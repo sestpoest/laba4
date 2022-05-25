@@ -1,14 +1,3 @@
-
-#include "../settings/Settings.h"
-#include "../db/DbConnection.h"
-#include <boost/uuid/uuid_generators.hpp>
-#include <boost/uuid/uuid_io.hpp>
-#include <boost/lexical_cast.hpp>
-#include "../utils/constants/DbCnst.h"
-#include "../utils/constants/FieldCnst.h"
-#include "../utils/constants/CollectionCnst.h"
-#include "../utils/constants/UsersSettingsCnst.h"
-
 using bsoncxx::builder::basic::kvp;
 
 std::map<std::string, Session> SessionAgregator::currentConnections;
